@@ -17,7 +17,10 @@ class Triangle
         return :equilateral
       elsif @one == @two or @one == @three or @two == @three 
         return :isosceles 
-      else 
+      elsif @one != @two and @one != @three and @two != @three 
+        return :scalene 
+      end 
+    end 
   end
   
   class TriangleError < StandardError
