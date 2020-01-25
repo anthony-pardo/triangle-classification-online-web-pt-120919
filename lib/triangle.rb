@@ -8,7 +8,9 @@ class Triangle
   end
   
   def kind 
-    if @one 
+    if @one <= 0 or @two <= 0 or @three <= 0 
+      raise TriangleError 
+    elsif 
   end
   
   class TriangleError < StandardError
