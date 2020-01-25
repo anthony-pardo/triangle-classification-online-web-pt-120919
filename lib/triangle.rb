@@ -10,7 +10,7 @@ class Triangle
   def kind 
     if @one <= 0 or @two <= 0 or @three <= 0 
       raise TriangleError 
-    elsif 
+    elsif @one + @two <= @three
   end
   
   class TriangleError < StandardError
