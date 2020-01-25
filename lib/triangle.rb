@@ -14,7 +14,7 @@ class Triangle
       raise TriangleError 
     else 
       if @one == @two or @one == @@three 
-        return :isocicles
+        return :equalateral
   end
   
   class TriangleError < StandardError
