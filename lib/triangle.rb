@@ -13,7 +13,7 @@ class Triangle
     elsif @one + @two <= @three or @one + @three <= @two or @two + @three <= @one 
       raise TriangleError 
     else 
-      if @one == @two or @one == @@three 
+      if @one == @two and @one == @@three 
         return :equilateral
   end
   
