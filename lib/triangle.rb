@@ -15,6 +15,7 @@ class Triangle
     else 
       if @one == @two and @one == @@three 
         return :equilateral
+      elsif 
   end
   
   class TriangleError < StandardError
